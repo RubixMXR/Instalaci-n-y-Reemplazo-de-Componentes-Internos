@@ -16,6 +16,7 @@ Pruebo las instrucciones ADD y SUB del tipo R, verificando que la ALU realiza co
 - Setear el PC a 0x00000000 antes de cada ejecución.
 
 ## Code
+```
 reset
 set r2 5
 set r3 3
@@ -43,6 +44,7 @@ set r3 -3
 set [0x00000000] 0x0086101C
 set pc 0x00000000
 n
+```
 
 ## Postcondiciones: 
 - Visualizar los registros con el comando 'r' después de cada ejecución para verificar el valor de R[1].
@@ -78,6 +80,7 @@ Pruebo las instrucciones AND, OR, XOR y NOR del tipo R, verificando que la ALU r
 - Setear el PC a 0x00000000 antes de cada ejecución.
 
 ## Code
+```
 reset
 set r2 0xFFFF
 set r3 0x0F0F
@@ -105,6 +108,7 @@ set r3 0x00FF
 set [0x00000000] 0x0086100B
 set pc 0x00000000
 n
+```
 
 ## Postcondiciones: 
 - Visualizar los registros con el comando 'r' después de cada ejecución para verificar el valor de R[1].
@@ -139,6 +143,7 @@ Pruebo las instrucciones SLT y SLTU del tipo R, verificando que la ALU realiza c
 - Setear el PC a 0x00000000 antes de cada ejecución.
 
 ## Code
+```
 reset
 set r2 3
 set r3 5
@@ -173,6 +178,7 @@ set r3 5
 set [0x00000000] 0x0086100D
 set pc 0x00000000
 n
+```
 
 ## Postcondiciones: 
 - Visualizar los registros con el comando 'r' después de cada ejecución para verificar el valor de R[1].
@@ -211,6 +217,7 @@ Pruebo las instrucciones de desplazamiento del tipo R, verificando que la ALU re
 - Setear el PC a 0x00000000 antes de cada ejecución.
 
 ## Code
+```
 reset
 set r2 1
 set [0x00000000] 0x00044280
@@ -249,6 +256,7 @@ set r3 10
 set [0x00000000] 0x00C44005
 set pc 0x00000000
 n
+```
 
 ## Postcondiciones: 
 - Visualizar los registros con el comando 'r' después de cada ejecución para verificar el valor de R4.
@@ -288,6 +296,7 @@ Pruebo las instrucciones ADDI, SLTI y SLTIU del tipo I, verificando que la ALU r
 - Setear el PC a 0x00000000 antes de cada ejecución.
 
 ## Code
+```
 reset
 set [0x00000000] 0x0804002A
 set pc 0x00000000
@@ -322,6 +331,7 @@ set r2 -5
 set [0x00000000] 0xB884000A
 set pc 0x00000000
 n
+```
 
 ## Postcondiciones: 
 - Visualizar los registros con el comando 'r' después de cada ejecución para verificar el valor de R2.
@@ -364,6 +374,7 @@ Pruebo las instrucciones lógicas con inmediatos del tipo L, verificando que la 
 - Setear el PC a 0x00000000 antes de cada ejecución.
 
 ## Code
+```
 reset
 set [0x00000000] 0x3804ABCD
 set pc 0x00000000
@@ -403,6 +414,7 @@ set r2 0xABCD1234
 set [0x00000000] 0x3085ABCD
 set pc 0x00000000
 n
+```
 
 ## Postcondiciones: 
 - Visualizar los registros con el comando 'r' después de cada ejecución para verificar el valor de R2.
@@ -447,6 +459,7 @@ Pruebo las instrucciones de carga desde memoria del tipo I, verificando que la C
 - Setear el PC a 0x00000000 antes de cada ejecución.
 
 ## Code
+```
 reset
 set r2 0x00000100
 set [0x00000100] 0xDEADBEEF
@@ -488,6 +501,7 @@ set [0x00000100] 0xDEADBEEF
 set [0x00000000] 0x78860001
 set pc 0x00000000
 n
+```
 
 ## Postcondiciones: 
 - Visualizar los registros con el comando 'r' después de cada ejecución para verificar el valor de R3.
@@ -530,6 +544,7 @@ Pruebo las instrucciones de almacenamiento en memoria del tipo I, verificando qu
 - Setear el PC a 0x00000000 antes de cada ejecución.
 
 ## Code
+```
 reset
 set r2 0x00000200
 set r3 0xCAFE1234
@@ -603,6 +618,7 @@ set r3 0xDE
 set [0x00000000] 0x58860003
 set pc 0x00000000
 n
+```
 
 ## Postcondiciones: 
 - Visualizar la memoria con el comando 'x 0x00000200' después de cada prueba para verificar el valor almacenado.
